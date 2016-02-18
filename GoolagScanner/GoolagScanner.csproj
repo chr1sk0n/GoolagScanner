@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{317B6AC4-1D35-439F-B686-F152FCE5BB8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoolagScanner</RootNamespace>
+    <AssemblyName>GoolagScanner</AssemblyName>
+    <ApplicationIcon>gscan.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>4EFDE54DCC674F2CB2B5A19298403E4C50204AED</ManifestCertificateThumbprint>
+    <ManifestKeyFile>gscan2_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>Z:\src\gscan2_setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Dork.cs" />
+    <Compile Include="DorkDone.cs" />
+    <Compile Include="DorkProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DorkProperty.Designer.cs">
+      <DependentUpon>DorkProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDorkScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDorkScan.Designer.cs">
+      <DependentUpon>EditDorkScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GScanForm.Designer.cs">
+      <DependentUpon>GScanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GScanForm_AnimThread.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GScanForm_Clipboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GScanForm_Commons.cs" />
+    <Compile Include="GScanForm_ResultList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GScanForm_Save.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GScanForm_Scanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GScanForm_TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IScanProvider.cs" />
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proxify.cs" />
+    <Compile Include="ScanGoogleProvider.cs" />
+    <Compile Include="ScanMonitor.cs" />
+    <Compile Include="Scanner.cs" />
+    <Compile Include="ScanningDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanningDialog.Designer.cs">
+      <DependentUpon>ScanningDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDialog.Designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="HttpSimpleGet.cs" />
+    <Compile Include="OSUtils.cs" />
+    <Compile Include="ParseHtmlResults.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DorkProperty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DorkProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDorkScan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditDorkScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GScanForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanningDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScanningDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RequestBuilder.cs" />
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSelectedDork.cs" />
+    <Compile Include="SummaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryReport.Designer.cs">
+      <DependentUpon>SummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryStat.cs" />
+    <Compile Include="TextAreaTraceListerner.cs" />
+    <Compile Include="XmlDorkSet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cdc2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Images\greyball.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gscan.ico" />
+    <None Include="Resources\Cdc009.png" />
+    <None Include="Images\cdc2d.png" />
+    <None Include="Images\gscansplashd.png" />
+    <None Include="Images\cDc4c.png" />
+    <None Include="Images\gscan-sm.png" />
+    <None Include="Images\eraser.gif" />
+    <None Include="Images\loading.gif" />
+    <None Include="Images\clear.bmp" />
+    <None Include="Images\21-1.gif" />
+    <None Include="Images\greenball.bmp" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

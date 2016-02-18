@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>gscan2</name>
+    </assembly>
+    <members>
+        <member name="F:gscan2.Options.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:gscan2.Options.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:gscan2.Options.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:gscan2.Splash.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:gscan2.Splash.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:gscan2.Splash.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:gscan2.GScanForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:gscan2.GScanForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:gscan2.GScanForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:gscan2.About.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:gscan2.About.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:gscan2.About.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:gscan2.DorkProperty.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:gscan2.DorkProperty.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:gscan2.DorkProperty.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:gscan2.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_CANCEL">
+            <summary>
+              Looks up a localized string similar to Canceling....
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_DORKS">
+            <summary>
+              Looks up a localized string similar to Dorks.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_DORKS_LOADED">
+            <summary>
+              Looks up a localized string similar to dorks loaded.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_E_GENERIC">
+            <summary>
+              Looks up a localized string similar to An error occured.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_E_OPENFILE">
+            <summary>
+              Looks up a localized string similar to Could not open file.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_E_SCANERROR">
+            <summary>
+              Looks up a localized string similar to An Error occured while scanning..
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_E_SELECTDORK">
+            <summary>
+              Looks up a localized string similar to Please select at least one dork from the list..
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_E_XMLINCORRECT">
+            <summary>
+              Looks up a localized string similar to Your XML-file seems to be incorrect and was not loaded..
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_LARGSCAN">
+            <summary>
+              Looks up a localized string similar to Large Scan Warning.
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_READY">
+            <summary>
+              Looks up a localized string similar to Ready..
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_SCANNING">
+            <summary>
+              Looks up a localized string similar to Scanning....
+            </summary>
+        </member>
+        <member name="P:gscan2.Properties.Resources.RES_W_LARGESCAN">
+            <summary>
+              Looks up a localized string similar to You are about to scan {0} dorks, which may lead to your IP being blocked. Continue?.
+            </summary>
+        </member>
+        <member name="M:gscan2.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>
