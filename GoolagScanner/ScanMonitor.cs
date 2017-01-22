@@ -106,10 +106,12 @@ namespace GoolagScanner
         /// <param name="scanner">Instance of Scanner object.</param>
         public void Add(Scanner scanner)
         {
-            ActiveScan NewScanThread = new ActiveScan();
+            ActiveScan NewScanThread = new ActiveScan
+            {
+                Scanner = scanner,
+                Thread = new Thread(scanner.Do)
+            };
 
-            NewScanThread.Scanner = scanner;
-            NewScanThread.Thread = new Thread(scanner.Do);
 
             lock (ScansTodoLock)
             {

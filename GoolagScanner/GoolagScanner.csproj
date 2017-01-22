@@ -13,8 +13,8 @@
     <ApplicationIcon>gscan.ico</ApplicationIcon>
     <ManifestCertificateThumbprint>4EFDE54DCC674F2CB2B5A19298403E4C50204AED</ManifestCertificateThumbprint>
     <ManifestKeyFile>gscan2_TemporaryKey.pfx</ManifestKeyFile>
-    <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetZone>LocalIntranet</TargetZone>
     <FileUpgradeFlags>

@@ -43,8 +43,9 @@ namespace GoolagScanner
         /// <summary>
         /// Constructor. Initialisation starts here.
         /// </summary>
-        public GScanForm()
+        public GScanForm(IContainer components)
         {
+            this.components = components;
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
 

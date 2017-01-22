@@ -131,7 +131,7 @@ namespace GoolagScanner
         public int CompareTo(Object d)
         {
             Dork dork = d as Dork;
-            return theName.CompareTo(dork.Name);
+            return String.Compare(theName, dork?.Name, StringComparison.Ordinal);
         }
     }
 }
